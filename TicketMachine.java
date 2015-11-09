@@ -23,7 +23,7 @@ public class TicketMachine
     /**
      * Create a machine that issues tickets of the given price.
      */
-    public TicketMachine(int cost)
+    public TicketMachine(int cost,boolean discount)
     {
         price = cost;
         balance = 0;
@@ -120,6 +120,6 @@ public class TicketMachine
     public void printTicketWithDiscount()
     {
         if (discount==false)
-        { System.out.print("no tiene descuento");}
+        { System.out.println("no tiene descuento");}
     }
 }
