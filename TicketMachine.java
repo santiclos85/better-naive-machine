@@ -17,6 +17,8 @@ public class TicketMachine
     private int balance;
     // The total amount of money collected by this machine.
     private int total;
+    
+    private boolean discount;
 
     /**
      * Create a machine that issues tickets of the given price.
@@ -26,6 +28,7 @@ public class TicketMachine
         price = cost;
         balance = 0;
         total = 0;
+        discount = discount;
     }
 
     /**
@@ -110,5 +113,13 @@ public class TicketMachine
         totalMoney = total;
         total = 0;
         return totalMoney;
+    }
+    /**
+     * Metodo Print Ticket With discount/
+     */
+    public void printTicketWithDiscount()
+    {
+        if (discount==false)
+        { System.out.print("no tiene descuento");}
     }
 }
